@@ -1,0 +1,2 @@
+git cofig --global user.name "Your Name"
+git config --global user.email "Your.email@example.com"
