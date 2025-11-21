@@ -1,115 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Group1</title>
-    <meta charset="utf-8">
-    <style>
-        /* General section styling */
-        section {
-            min-height: 150px;
-            border: 2px solid black;
-            margin: 10px;
-            padding: 10px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    /*NORMAL STYLE*/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
 
-        /* Center the main title */
-        header h1 {
-            text-align: center;
-            padding: 10px;
-            margin: 10px;
-        }
+    /* Header */
+    header {
+      background-color: dimgray;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-        /* Banner styling */
-        #banner {
-            background-color: brown;
-        }
+    .profile-photo {
+      width: 135px;
+      height: 150px;
+      border-radius: 60%;
+      border: 5px solid #fff;
+    }
 
-        #section1 {
-            background-color: lightgreen;
-        }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        #section2 {
-            background-color: lightgray;
-        }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        #section3 {
-            background-color: skyblue;
-        }
+    nav a:hover {
+      color: #ff6600;
+      transform: scale(1.1);
+    }
 
-        /* Navigation links */
-        nav {
-            background-color: palegreen;
-            min-height: 50px;
-            padding: 15px;
-            text-align: center; /* center nav links */
-            border: 2px solid black;
-            margin: 10px;
-        }
+    /* Qualifications Table */
+    #qualifications {
+      padding: 2rem;
+      background: #fff;
+      text-align: center;
+    }
 
-        nav a {
-            text-decoration: none;
-            margin: 0 30px; /* spacing between links */
-            font-weight: bold;
-        }
+    #qualifications h2 {
+      margin-bottom: 1rem;
+    }
 
-        /* Aside box */
-        aside {
-            background-color: pink;
-            float: left;
-            width: 250px;
-            border: 2px solid black;
-            margin: 10px;
-            padding: 10px;
-        }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 700px;
+    }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            
-            padding: 10px;
-            margin: 10px;
-        }
-    </style>
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #333;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    /* Contact Form */
+    #contact {
+      padding: 2rem;
+      background: #eee;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff6600;
+    }
+     /* About Me */
+    #about {
+      padding: 2rem;
+      background: #eee;
+      text-align: center;
+    }
+
+    #about h2 {
+      margin-bottom: 1rem;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+    /* Social Media */
+    #social {
+      padding: 2rem;
+      background: #fff;
+      text-align: center;
+    }
+
+    #social h2 {
+      margin-bottom: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+    .social-links a:hover {
+      background: #ff6600;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Group1</h1>
+  <!-- Header -->
+  <header>
+    <div class="profile">
+      <img src="C:\Users\agrat\OneDrive\Documents\WhatsApp Image 2025-11-21 at 19.38.47_06c85b49.jpg" alt="Profile Photo" class="profile-photo">
+      <h1>Agrata Amatya</h1>
+      <p>Web Developer | Designer | Student</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#qualifications">Qualification</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#social">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I’m Agrata Amatya, a passionate web developer and student who loves creating clean, 
+      user-friendly websites. I enjoy blending design and technology to build digital experiences 
+      that are both functional and visually appealing. My journey in tech has been fueled by curiosity 
+      and a drive to keep learning new skills every day.
+    </p>
+  </section>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <!-- Qualification -->
+  <section id="qualifications">
+    <h2>My Qualifications</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Bachelor of Computer Science</td>
+        <td>XYZ University</td>
+        <td>Running</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>School</td>
+        <td>Kadambari Academy</td>
+        <td>2021</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>High School</td>
+        <td>Hetauda School of Management & Social Science</td>
+        <td>2023</td>
+        <td>A</td>
+      </tr>
+    </table>
+  </section>
 
-    <section id="banner">
-        <h2>This is for banner</h2>
-    </section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-    <main>
-        <aside>
-            <ul>
-                <li>Link1</li>
-                <li>Link2</li>
-                <li>Link3</li>
-                <li>Link4</li>
-            </ul>
-        </aside>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        <section id="section2">
-            <h2>This is for section 2</h2>
-        </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <section id="section3">
-            <h2>This is for section 3</h2>
-        </section>
-    </main>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <!-- Social Media -->
+  <section id="social">
+    <h2>Connect with Me</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/agrata.amatya/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.snapchat.com/add/agrata_amatya" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a>
+      <a href="https://www.facebook.com/agrata.amatya" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
+  </section>
 
-    <footer>
-        &copy; All rights reserved @2025
-    </footer>
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> All rights reserved
+  </footer>
+
 </body>
-
 </html>
