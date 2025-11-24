@@ -60,6 +60,54 @@
     #qualifications h2 {
       margin-bottom: 1rem;
     }
+    /* Projects */
+#projects {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
 
     table {
       margin: auto;
@@ -176,13 +224,14 @@
   <!-- Header -->
   <header>
     <div class="profile">
-      <img src="C:\Users\agrat\OneDrive\Documents\WhatsApp Image 2025-11-21 at 19.38.47_06c85b49.jpg" alt="Profile Photo" class="profile-photo">
+      <img src="C:\Full Stack Devlopment\Image\WhatsApp Image 2025-11-21 at 19.38.47_06c85b49.jpg" alt="Profile Photo" class="profile-photo">
       <h1>Agrata Amatya</h1>
       <p>Web Developer | Designer | Student</p>
     </div>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#qualifications">Qualification</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#social">Social Media</a></li>
@@ -230,6 +279,25 @@
       </tr>
     </table>
   </section>
+    <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A simple weather application that fetches real-time weather data and displays forecasts.</p>
+        <!--dd screenshot -->
+        <img src="C:\Full Stack Devlopment\Image\Screenshot 2025-11-24 172502.png" alt="Weather App Screenshot"> 
+      </div>
+      <div class="project-card">
+        <h3>Banking System (Java)</h3>
+        <p>A Java-based banking system project that manages accounts, transactions, and user authentication.</p>
+        <!-- add screenshot -->
+        <img src="C:\Full Stack Devlopment\Image\Screenshot 2025-11-24 172722.png" alt="Banking System Screenshot"> 
+      </div>
+    </div>
+  </section>
+
 
   <!-- Contact -->
   <section id="contact">
@@ -259,7 +327,7 @@
 
   <!-- Footer -->
   <footer>
-    &copy; <span id="year"></span> All rights reserved
+    &copy; <span id="year"></span> All rights reserved @2025
   </footer>
 
 </body>
